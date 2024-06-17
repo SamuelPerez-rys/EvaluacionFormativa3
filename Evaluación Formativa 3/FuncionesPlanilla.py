@@ -1,10 +1,12 @@
 ###Funciones Planilla
 import csv
 trabajadores=[];
-
+listatrabajadores=[];
 def registrarTrabajador():
     try: 
         nombre=input("Ingrese el nombre y el apellido del trabajador:  ");
+        listatrabajadores.append(nombre);
+        
     except ValueError:
         print("Nombre y apellido son obligatorios");
     else:
