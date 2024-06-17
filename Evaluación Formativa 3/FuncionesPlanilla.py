@@ -20,32 +20,30 @@ def registrarTrabajador():
             else:
                 if(cargo=='CEO'):
                     descSalud=sueldoBruto*0.07 
-                    descfAfp=sueldoBruto*0.12
+                    descAfp=sueldoBruto*0.12
+                elif(cargo=='Desarrollador'):   
+                    descSalud=sueldoBruto*0.05 
+                    descAfp=sueldoBruto*0.10
+                elif(cargo=='Analista'):
+                    descSalud=sueldoBruto*0.06
+                    descAfp=sueldoBruto*0.11  
+
+    liquidoPagar=(sueldoBruto-descSalud-descAfp);            
+
+    trabajador = {
+    'nombre': nombre,
+    'cargo': cargo,
+    'sueldoBruto': sueldoBruto,
+    'descSalud': descSalud,
+    'descAfp': descAfp,
+    'liquidoPagar': liquidoPagar
+    }
+    trabajadores.append(trabajador)
+    print("Trabajador registrado exitosamente.\n")
+    
+
+
+def imprimirPlanilla
 
 
 
-
-
-                trabajador = {
-                'nombre': nombre,
-                'cargo': cargo,
-                'sueldoBruto': sueldoBruto,
-                'descSalud': descSalud,
-                'descAfp': descAfp,
-                'liquidoPagar': liquidoPagar
-                }
-                trabajadores.append(trabajador)
-                print("Trabajador registrado exitosamente.\n")
-                
-
-
-
-
-
-
-with open('ArchivoNuevo_CSV.csv','w',newline='',encoding='utf-8') as arch:
-    encabezado=['Trabajador','Cargo','Sueldo Bruto','Desc. Salud','Desc. AFP','Liquido a pagar'];
-    matrizDatos=input("Ingrese ")
-    archivo_csv=csv.writer(arch);
-    archivo_csv.writerow(encabezado);
-    archivo_csv.writerow(matrizDatos);
