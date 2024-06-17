@@ -11,3 +11,6 @@ menuDecision=int(input("\nIngrese una opción:  "));
 
 if (menuDecision==1):
     func
+
+    alosi
+    
