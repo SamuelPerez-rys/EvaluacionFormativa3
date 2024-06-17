@@ -4,17 +4,17 @@ trabajadores=[];
 
 def registrarTrabajador():
     try: 
-        nombre=input("Ingrese el nombre y el apellido del trabajador");
+        nombre=input("Ingrese el nombre y el apellido del trabajador:  ");
     except ValueError:
         print("Nombre y apellido son obligatorios");
     else:
         try: 
-            cargo=input("Ingrese el cargo del trabajador");
+            cargo=input("Ingrese el cargo del trabajador:  ");
         except ValueError:
             print("Ingresar el cargo es obligatorio");
         else:
             try: 
-                sueldoBruto=float(input("Ingrese el sueldo del trabajador"));
+                sueldoBruto=float(input("Ingrese el sueldo del trabajador:  "));
             except ValueError:
                 print("Ingresar el sueldo es obligatorio");
             else:
@@ -42,6 +42,6 @@ def registrarTrabajador():
     print("Trabajador registrado exitosamente.\n")
     
 
-print(trabajadores)
+
 
 
