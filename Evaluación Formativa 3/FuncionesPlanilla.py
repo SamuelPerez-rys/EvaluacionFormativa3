@@ -1,5 +1,6 @@
 ###Funciones Planilla
 import csv
+trabajadores=[];
 
 def registrarTrabajador():
     try: 
@@ -11,7 +12,31 @@ def registrarTrabajador():
             cargo=input("Ingrese el cargo del trabajador");
         except ValueError:
             print("Ingresar el cargo es obligatorio");
-        else:    
+        else:
+            try: 
+                sueldoBruto=float(input("Ingrese el sueldo del trabajador"));
+            except ValueError:
+                print("Ingresar el sueldo es obligatorio");
+            else:
+                if(cargo=='CEO'):
+                    descSalud=sueldoBruto*0.07 
+                    descfAfp=sueldoBruto*0.12
+
+
+
+
+
+                trabajador = {
+                'nombre': nombre,
+                'cargo': cargo,
+                'sueldoBruto': sueldoBruto,
+                'descSalud': descSalud,
+                'descAfp': descAfp,
+                'liquidoPagar': liquidoPagar
+                }
+                trabajadores.append(trabajador)
+                print("Trabajador registrado exitosamente.\n")
+                
 
 
 
