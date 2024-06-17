@@ -19,7 +19,8 @@ def registrarTrabajador():
                 print("Ingresar el sueldo es obligatorio");
             else:
                 if(cargo=='CEO'):
-                    descSalud=sueldoBruto*
+                    descSalud=sueldoBruto*0.07 
+                    descfAfp=sueldoBruto*0.12
 
 
 
