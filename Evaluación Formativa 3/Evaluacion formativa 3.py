@@ -17,7 +17,7 @@ while True:
         print("Opción Inválida. Intenta nuevamente.");
     else:
         if (menuDecision == 1):
-            func
+            func.registrarTrabajador;
         elif (menuDecision == 2):
             lista
         elif (menuDecision == 3):

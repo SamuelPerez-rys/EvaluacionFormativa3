@@ -42,8 +42,6 @@ def registrarTrabajador():
     print("Trabajador registrado exitosamente.\n")
     
 
-
-def imprimirPlanilla
-
+print(trabajadores)
 
 
