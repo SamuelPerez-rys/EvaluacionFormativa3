@@ -1,16 +1,32 @@
 ###Empresa DUOC
 import FuncionesPlanilla as func
+import time
 
-print("\nBienvenido a DUOC Empresa\n\nElija una opción:  ");
-print("1.- Registrar Trabajador");
-print("2.- Lista de trabajadores");
-print("3.- Imprimir planilla de sueldos");
-print("4.- Salir del programa");
 
-menuDecision=int(input("\nIngrese una opción:  "));
 
-if (menuDecision==1):
-    func
+while True:
+    print("\nBienvenido a DUOC Empresa\n\nElija una opción:  ");
+    print("1.- Registrar Trabajador");
+    print("2.- Lista de trabajadores");
+    print("3.- Imprimir planilla de sueldos");
+    print("4.- Salir del programa");
 
-    alosi
-    
+    try:
+        menuDecision = int(input("\nIngrese una opción: "));
+    except ValueError:
+        print("Opción Inválida. Intenta nuevamente.");
+    else:
+        if (menuDecision == 1):
+            func
+        elif (menuDecision == 2):
+            lista
+        elif (menuDecision == 3):
+            imprimir
+            print ("Imprimiendo...");
+            time.sleep(2);
+        elif (menuDecision == 4):
+            print ("Saliendo...");
+            time.sleep(2);
+            break;
+        else:
+            print("Opción Inválida. Intenta nuevamente.");
