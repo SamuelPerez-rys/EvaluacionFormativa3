@@ -40,6 +40,7 @@ def registrarTrabajador():
     }
     trabajadores.append(trabajador)
     print("Trabajador registrado exitosamente.\n")
+    print(trabajadores)
     
 
 
